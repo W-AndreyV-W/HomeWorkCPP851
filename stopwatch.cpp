@@ -30,7 +30,15 @@ void Stopwatch::timerStopwatch() {
 
 void Stopwatch::crearStopwatch() {
 
-    timeNull = QTime(0, 0);
+    if(timer->isActive()) {
+
+        circle_time = QTime::currentTime();
+        timeNull = circle_time;
+    }
+    else {
+
+        timeNull = QTime(0, 0);
+    }
 }
 
 void Stopwatch::startCircle() {

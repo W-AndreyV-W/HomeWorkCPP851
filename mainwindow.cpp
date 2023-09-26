@@ -52,7 +52,6 @@ void MainWindow::on_puB_StartStop_clicked() {
         ui->puB_StartStop->setText("Стоп");
 
         ui->puB_Circle->setEnabled(true);
-        ui->puB_Clear->setEnabled(false);
     }
     else {
 
@@ -61,7 +60,6 @@ void MainWindow::on_puB_StartStop_clicked() {
         ui->puB_StartStop->setText("Старт");
 
         ui->puB_Circle->setEnabled(false);
-        ui->puB_Clear->setEnabled(true);
     }
 }
 
